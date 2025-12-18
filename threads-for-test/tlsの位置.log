@@ -1,0 +1,1412 @@
+========================================
+Bank Account Simulator (Multi-threaded)
+========================================
+Accounts: 5
+Threads: 8
+Initial Balance per Account: 1000
+Transfer Amount: 50
+Runtime: 300 seconds
+========================================
+
+Initial state:
+
+========== Account Status ==========
+Account 0: Balance= 1000, Transfers=     0
+Account 1: Balance= 1000, Transfers=     0
+Account 2: Balance= 1000, Transfers=     0
+Account 3: Balance= 1000, Transfers=     0
+Account 4: Balance= 1000, Transfers=     0
+------------------------------------
+Total Balance: 5000 (Expected: 5000) ✓ OK
+Total Transfers: 0, Errors: 0
+====================================
+
+Starting simulation...
+You can pause/resume the process using your mechanism.
+Press Ctrl+C to stop early if needed.
+Creating timer thread...
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+[33m!attrp || c11[0m[33mtsdなし[0m
+[33m!stack
+[0matomic_store
+Timer thread created successfully
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+[33m!attrp || c11[0m[33mtsdなし[0m
+[Timer] Will run for 300 seconds
+[33m!stack
+[0msleep called: 1
+atomic_store
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+[33m!attrp || c11[0m[Monitor] Started
+[33mtsdなし[0m
+sleep called: 3
+[33m!stack
+[0matomic_store
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+[33m!attrp || c11[0m[33mtsdなし[0m
+[Thread 0] Started
+[33m!stack
+[0matomic_store
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+[33m!attrp || c11[0m[33mtsdなし[0m
+[Thread 1] Started
+[33m!stack
+[0mmutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x51d04 tid=4
+atomic_store
+[Thread 2] Started
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+[33m!attrp || c11[0m[33mtsdなし[0m
+[33m!stack
+[0mmutex=0x1464 lock=a self=0x51d04 tid=4
+atomic_store
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+[33m!attrp || c11[0m[33mtsdなし[0m
+mutex=0x13e4 lock=a self=0x51d04 tid=4
+[Thread 3] Started
+[33m!stack
+[0mmutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x61d94 tid=5
+atomic_store
+mutex=0x1424 lock=8000000a self=0x51d04 tid=4
+[Thread 4] Started
+Looking up symbol: args_get
+Looking up symbol: args_sizes_get
+Looking up symbol: clock_time_get
+Looking up symbol: fd_close
+Looking up symbol: fd_fdstat_get
+Looking up symbol: fd_seek
+Looking up symbol: fd_write
+Looking up symbol: poll_oneoff
+Looking up symbol: proc_exit
+Looking up symbol: sched_yield
+Looking up symbol: thread-spawn
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 0
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+signal init: 136312977737280
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6420000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6420000
+thread_spawn_wrapper start_arg=138044
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6430000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6430000
+thread_spawn_wrapper start_arg=203724
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6440000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6440000
+thread_spawn_wrapper start_arg=269404
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6450000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6450000
+thread_spawn_wrapper start_arg=335084
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6460000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6460000
+thread_spawn_wrapper start_arg=400764
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6470000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6470000
+thread_spawn_wrapper start_arg=466444
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6480000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6480000
+thread_spawn_wrapper start_arg=532124
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6490000
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0x7bf7d6490000
+thread_spawn_wrapper start_arg=597804
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 1
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+線形メモリ：memory_data: 0x7bf7d6400000, memory_end: 0[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+mutex=0x1424 lock=8000000a self=0x81eb4 tid=7
+[33m!attrp || c11[0m[33mtsdなし[0m
+[33m!stack
+[0mmutex=0x1404 lock=a self=0x61d94 tid=5
+atomic_store
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+[Thread 5] Started
+[33m!attrp || c11[0m[33mtsdなし[0m
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+[33m!stack
+[0mmutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x51d04 tid=4
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+atomic_store
+[31mpthread called un[0m
+=        wasi-libc debugging1129        =
+mutex=0x1404 lock=a self=0x71e24 tid=6
+[33m!attrp || c11[0m[33mtsdなし[0m
+[Thread 6] Started
+[33m!stack
+[0mmutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+[Thread 7] Started
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+atomic_store
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x81eb4 tid=7
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=8000000a self=0x81eb4 tid=7
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x81eb4 tid=7
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=8000000a self=0x91f44 tid=8
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=8000000a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=8000000a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x91f44 tid=8
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0x71e24 tid=6
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=8000000a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0x91f44 tid=8
+mutex=0x13e4 lock=a self=0x91f44 tid=8
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=8000000a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1444 lock=a self=0x61d94 tid=5
+mutex=0x1444 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1444 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xa1fd4 tid=9
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1424 lock=a self=0x61d94 tid=5
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x1464 lock=a self=0x61d94 tid=5
+mutex=0x1424 lock=a self=0x41c74 tid=3
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0xb2064 tid=10
+mutex=0x1464 lock=a self=0xa1fd4 tid=9
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x1444 lock=a self=0x71e24 tid=6
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0xa1fd4 tid=9
+mutex=0x13e4 lock=8000000a self=0xb2064 tid=10
+mutex=0x13e4 lock=8000000a self=0x71e24 tid=6
+mutex=0x1404 lock=a self=0xb2064 tid=10
+mutex=0x1404 lock=a self=0x41c74 tid=3
+mutex=0x13e4 lock=8000000a self=0x61d94 tid=5
+mutex=0x1404 lock=8000000a self=0x61d94 tid=5
+mutex=0x1464 lock=a self=0x71e24 tid=6
+mutex=0x1424 lock=a self=0xb2064 tid=10
+mutex=0x13e4 lock=a self=0x41c74 tid=3
+mutex=0x1404 lock=a self=0x71e24 tid=6

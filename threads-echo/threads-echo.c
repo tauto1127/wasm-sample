@@ -54,10 +54,10 @@ int main() {
 
   pthread_t thread;
   pthread_t thread2;
-  pthread_create(&thread, NULL, thread_routine, NULL);
-  pthread_create(&thread2, NULL, thread_routine, NULL);
-  // pthread_create(&thread, NULL, thread_routine_not_use_wait, NULL);
-  // pthread_create(&thread2, NULL, thread_routine_not_use_wait, NULL);
+  // pthread_create(&thread, NULL, thread_routine, NULL);
+  // pthread_create(&thread2, NULL, thread_routine, NULL);
+  pthread_create(&thread, NULL, thread_routine_not_use_wait, NULL);
+  pthread_create(&thread2, NULL, thread_routine_not_use_wait, NULL);
 
   int count = 0;
 
