@@ -1,0 +1,286 @@
+restore flag set 
+Looking up symbol: clock_time_get
+Looking up symbol: fd_close
+Looking up symbol: fd_fdstat_get
+Looking up symbol: fd_seek
+Looking up symbol: fd_write
+Looking up symbol: proc_exit
+Looking up symbol: sched_yield
+Looking up symbol: thread-spawn
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 0
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+signal init: 126053576652352
+メインスレッド
+=======Start restoring 2 wasm VM
+waiting_thread_ids: count: 1
+waiting_thread_ids[0]: 1
+wasm_cluster_init_checkpointing_counter : 0
+thread_ids : 1
+Restoring wasm thread 1 from 1-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+1-Start constructing Wasm VM
+-==============================restore
+thread 1 restore
+1-Start constructing Wasm VM
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+Done Restoring wasm thread 1 from 1-*
+done wasm_restore_thread
+get_file_prefix
+restore stack
+メインスレッドじゃない: 126053576517184 and SIG_RESTORE
+1 Started interpretor
+1 start restore stack
+restore stack
+1 restore stack done
+無視
+1 done restore
+counter up: 1
+[waiting_run enter] tid=1 host=126053576517184
+1
+無視
+2
+3
+counter up: 2
+========all threads restore done
+waking up thread 1: 126053576382016
+waking up thread main!!
+done waiting threads run!
+[waiting_run end] tid=1 host=126053576517184
+1: thread run
+done waiting threads run2!
+restore_sync_routine: finished wake up all threads
+main thread wake up!
+線形メモリ：memory_data: 0x72a322600000, memory_end: 0x72a322630000
+main thread run
+線形メモリ：memory_data: 0x72a322600000, memory_end: 0x72a322630000
+true
+thread1 unlock i=14
+main before lock i=15\nthread1 lock i=15
+thread1 unlock i=15
+main before lock i=16\nthread1 lock i=16
+thread1 unlock i=16
+main before lock i=17\nthread1 lock i=17
+thread1 unlock i=17
+main before lock i=18\nthread1 lock i=18
+thread1 unlock i=18
+main before lock i=19\nthread1 lock i=19
+thread1 unlock i=19
+main before lock i=20\nthread1 lock i=20
+thread1 unlock i=20
+main before lock i=21\nthread1 lock i=21
+thread1 unlock i=21
+main before lock i=22\nthread1 lock i=22
+thread1 unlock i=22
+main before lock i=23\nthread1 lock i=23
+thread1 unlock i=23
+main before lock i=24\nthread1 lock i=24
+thread1 unlock i=24
+main before lock i=25\nthread1 lock i=25
+thread1 unlock i=25
+main before lock i=26\nthread1 lock i=26
+thread1 unlock i=26
+main before lock i=27\nthread1 lock i=27
+thread1 unlock i=27
+main before lock i=28\nthread1 lock i=28
+thread1 unlock i=28
+main before lock i=29\nthread1 lock i=29
+thread1 unlock i=29
+main before lock i=30\nthread1 lock i=30
+thread1 unlock i=30
+main before lock i=31\nthread1 lock i=31
+thread1 unlock i=31
+main before lock i=32\nthread1 lock i=32
+thread1 unlock i=32
+main before lock i=33\nthread1 lock i=33
+thread1 unlock i=33
+main before lock i=34\nthread1 lock i=34
+thread1 unlock i=34
+main before lock i=35\nthread1 lock i=35
+thread1 unlock i=35
+main before lock i=36\nthread1 lock i=36
+thread1 unlock i=36
+main before lock i=37\nthread1 lock i=37
+thread1 unlock i=37
+main before lock i=38\nthread1 lock i=38
+thread1 unlock i=38
+main before lock i=39\nthread1 lock i=39
+thread1 unlock i=39
+main before lock i=40\nthread1 lock i=40
+thread1 unlock i=40
+main before lock i=41\nthread1 lock i=41
+thread1 unlock i=41
+main before lock i=42\nthread1 lock i=42
+thread1 unlock i=42
+main before lock i=43\nthread1 lock i=43
+thread1 unlock i=43
+main before lock i=44\nthread1 lock i=44
+thread1 unlock i=44
+main before lock i=45\nthread1 lock i=45
+thread1 unlock i=45
+main before lock i=46\nthread1 lock i=46
+thread1 unlock i=46
+main before lock i=47\nthread1 lock i=47
+thread1 unlock i=47
+main before lock i=48\nthread1 lock i=48
+thread1 unlock i=48
+main before lock i=49\nthread1 lock i=49
+thread1 unlock i=49
+main before lock i=50\nthread1 lock i=50
+thread1 unlock i=50
+main before lock i=51\nthread1 lock i=51
+thread1 unlock i=51
+main before lock i=52\nthread1 lock i=52
+thread1 unlock i=52
+main before lock i=53\nthread1 lock i=53
+thread1 unlock i=53
+main before lock i=54\nthread1 lock i=54
+
+
+//stderr
+boot_end, 337113227726789
+boot_end, 337113228363386
+stack, 208716
+stack, 150184
+global, 9087
+program counter, 9649
+memory, 287015
+global, 12453
+program counter, 10189
+waking up thread 1: 126053576382016
+waking up thread main!!
+1: thread run
+main thread run
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=-2147483638
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823 cont=10
+[mtx_unlock after notify] m=0x1514 lock=0x0 own=0 self=0x404 tid=1073741823
+[mtx_unlock] m=0x1514 lock=0xa own=0 self=0x404 tid=1073741823 waiters=1 count=0

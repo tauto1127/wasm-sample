@@ -1,0 +1,234 @@
+restore flag set 
+Looking up symbol: clock_time_get
+Looking up symbol: fd_close
+Looking up symbol: fd_fdstat_get
+Looking up symbol: fd_seek
+Looking up symbol: fd_write
+Looking up symbol: poll_oneoff
+Looking up symbol: proc_exit
+Looking up symbol: sched_yield
+Looking up symbol: thread-spawn
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 0
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+signal init: 130254137980480
+メインスレッド
+=======Start restoring 3 wasm VM
+[05:25:11:562 - 767727C56940]: warning: wasm_runtime_malloc with size zero
+
+waiting_thread_ids: count: 0
+wasm_cluster_init_checkpointing_counter : 0
+thread_ids : 2
+Restoring wasm thread 2 from 2-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+2-Start constructing Wasm VM
+-==============================restore
+thread 2 restore
+2-Start constructing Wasm VM
+Done Restoring wasm thread 2 from 2-*
+thread_ids : 1
+Restoring wasm thread 1 from 1-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+1-Start constructing Wasm VM
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+-==============================restore
+thread 1 restore
+1-Start constructing Wasm VM
+メインスレッドじゃない: 130254137845312 and SIG_RESTORE
+2 Started interpretor
+2 start restore stack
+restore stack
+2 restore stack done
+無視
+2 done restore
+Done Restoring wasm thread 1 from 1-*
+done wasm_restore_thread
+counter up: 1
+[waiting_run enter] tid=2 host=130254137845312
+get_file_prefix
+restore stack
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+メインスレッドじゃない: 130245545948736 and SIG_RESTORE
+1 Started interpretor
+1 start restore stack
+restore stack
+1 restore stack done
+無視
+1 done restore
+counter up: 2
+[waiting_run enter] tid=1 host=130245545948736
+1
+無視
+2
+3
+counter up: 3
+========all threads restore done
+waking up thread 1: 130254136792640
+waking up thread 2: 130254136792640
+waking up thread main!!
+done waiting threads run!
+done waiting threads run2!
+restore_sync_routine: finished wake up all threads
+[waiting_run end] tid=1 host=130245545948736
+1: thread run
+main thread wake up!
+[waiting_run end] tid=2 host=130254137845312
+2: thread run
+線形メモリ：memory_data: 0x767527800000, memory_end: 0x767527840000
+線形メモリ：memory_data: 0x767527800000, memory_end: 0x767527840000
+main thread run
+線形メモリ：memory_data: 0x767527800000, memory_end: 0x767527840000
+count: 23
+echo from 136900
+echo from main
+echo from 202580
+__wasi_poll_oneoff called(wasi-libc) 
+現在の時刻（UNIX時間）: 1766069532
+sleepします
+現在の時刻（UNIX時間）: 1766069532
+__wasi_poll_oneoff called(wasi-libc) 
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+count: 24
+echo from main
+echo from 136900
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 202580
+現在の時刻（UNIX時間）: 1766069533
+現在の時刻（UNIX時間）: 1766069533
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 25
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069534
+現在の時刻（UNIX時間）: 1766069534
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 26
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069535
+現在の時刻（UNIX時間）: 1766069535
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 27
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069536
+現在の時刻（UNIX時間）: 1766069536
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 28
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069537
+現在の時刻（UNIX時間）: 1766069537
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+count: 29
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 202580
+echo from 136900
+現在の時刻（UNIX時間）: 1766069538
+現在の時刻（UNIX時間）: 1766069538
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+count: 30
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 202580
+echo from 136900
+現在の時刻（UNIX時間）: 1766069539
+現在の時刻（UNIX時間）: 1766069539
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 31
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069540
+現在の時刻（UNIX時間）: 1766069540
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 32
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069541
+現在の時刻（UNIX時間）: 1766069541
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 
+count: 33
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 136900
+echo from 202580
+現在の時刻（UNIX時間）: 1766069542
+現在の時刻（UNIX時間）: 1766069542
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+count: 34
+echo from main
+__wasi_poll_oneoff called(wasi-libc) 
+echo from 202580
+echo from 136900
+現在の時刻（UNIX時間）: 1766069543
+現在の時刻（UNIX時間）: 1766069543
+sleepします
+sleepします
+__wasi_poll_oneoff called(wasi-libc) 
+__wasi_poll_oneoff called(wasi-libc) 

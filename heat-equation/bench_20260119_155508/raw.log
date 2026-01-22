@@ -1,0 +1,38 @@
+# command: /home/takuto1127/wamr-2.1.0-with-wasi-threads/product-mini/platforms/linux/build/iwasm --max-threads=32 wasm.wasm 1000 1000 50 1 mutex
+=== run 1/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=20.753770
+signal init: 128983393973824
+=== run 2/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=21.303851
+signal init: 134412731786816
+=== run 3/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=20.511270
+signal init: 133015192000064
+=== run 4/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=20.882877
+signal init: 123136793986624
+=== run 5/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=20.983729
+signal init: 133822472791616
+=== run 6/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=21.229040
+signal init: 128619789293120
+=== run 7/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=20.767876
+signal init: 132955194041920
+=== run 8/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=1 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0

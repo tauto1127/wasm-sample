@@ -1,0 +1,41 @@
+# command: /home/takuto1127/wamr-2.1.0-with-wasi-threads-vanilla/product-mini/platforms/linux/build/iwasm --max-threads=32 wasm.wasm 1000 1000 50 4 mutex
+=== run 1/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.321048
+=== run 2/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.306419
+=== run 3/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.340265
+=== run 4/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.397091
+=== run 5/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.420131
+=== run 6/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.391308
+=== run 7/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.314609
+=== run 8/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.436854
+=== run 9/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.433616
+=== run 10/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.555317

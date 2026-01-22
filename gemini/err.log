@@ -1,0 +1,25 @@
+boot_end, 27423913487651
+boot_end, 27423914559353
+stack, 113174
+global, 8676
+program counter, 7875
+boot_end, 27423915401820
+stack, 85702
+global, 7083
+program counter, 6572
+boot_end, 27423916278622
+stack, 86394
+global, 7985
+stack, 270112
+program counter, 6313
+memory, 375200
+global, 9388
+program counter, 7394
+waking up thread 1: 126716622571072
+waking up thread 2: 126716622571072
+waking up thread 3: 126716622571072
+waking up thread main!!
+main thread run
+1: thread run
+2: thread run
+3: thread run

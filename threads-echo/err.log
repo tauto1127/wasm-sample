@@ -1,0 +1,98 @@
+boot_end, 365111562422950
+[clusterlog thread_start] exec_env=0x6546605bd580 module_inst=0x6546605bb400 cluster=0x6546605b8f80 cluster_lock=0x6546605b8f88 handle=130254137845312 thread_id=2 thread_arg=0x6546605bb7e0
+boot_end, 365111563406722
+stack, 111141
+global, 7033
+program counter, 7134
+[clusterlog thread_start] exec_env=0x6546605cf490 module_inst=0x6546605bbb10 cluster=0x6546605b8f80 cluster_lock=0x6546605b8f88 handle=130245545948736 thread_id=1 thread_arg=0x6546605bbf10
+boot_end, 365111564399923
+stack, 251937
+stack, 99438
+global, 8806
+program counter, 9148
+memory, 238773
+global, 7004
+program counter, 5511
+[clusterlog restore_sync] self=130254136792640 main_exec_env=0x6546605a8120 cluster=0x6546605b8f80 cluster_lock=0x6546605b8f88 waiting_thread_count=0 waiting_thread_ids=0x6546605bc380
+waking up thread 1: 130254136792640
+waking up thread 2: 130254136792640
+waking up thread main!!
+1: thread run
+2: thread run
+[restore_pclog] tid=2 func_idx=24 is_import=0 ip=0x654660598662 ip_end=0x654660598668 code=0x654660598647 code_end=0x654660598668 in_range=1 ip_off=27
+main thread run
+[restore_pclog] tid=-1 func_idx=24 is_import=0 ip=0x654660598662 ip_end=0x654660598668 code=0x654660598647 code_end=0x654660598668 in_range=1 ip_off=27
+[restore_pclog] tid=1 func_idx=24 is_import=0 ip=0x654660598662 ip_end=0x654660598668 code=0x654660598647 code_end=0x654660598668 in_range=1 ip_off=27
+[notify enter] seq=1 addr_off=0xf64 count=1
+[notify miss]  seq=1 addr_off=0xf64 reason=no_wait_info
+[wait pre-search] seq=1 addr_off=0xf64 expect=0x40000001 timeout=-1 wait64=0
+[wait enter] seq=1 tid=2 addr_off=0xf64
+[wait armed] seq=1 addr_off=0xf64 waiters=1
+[notify enter] seq=2 addr_off=0xf64 count=1
+[notify hit]   seq=2 addr_off=0xf64 waiters=1
+[notify exit]  seq=2 addr_off=0xf64 notified=1
+[wait exit]  seq=1 addr_off=0xf64 result=notified
+[notify enter] seq=3 addr_off=0xf64 count=1
+[notify miss]  seq=3 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=4 addr_off=0xf64 count=1
+[notify miss]  seq=4 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=5 addr_off=0xf64 count=1
+[notify miss]  seq=5 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=6 addr_off=0xf64 count=1
+[notify miss]  seq=6 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=7 addr_off=0xf64 count=1
+[notify miss]  seq=7 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=8 addr_off=0xf64 count=1
+[notify miss]  seq=8 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=9 addr_off=0xf64 count=1
+[notify miss]  seq=9 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=10 addr_off=0xf64 count=1
+[notify miss]  seq=10 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=11 addr_off=0xf64 count=1
+[notify miss]  seq=11 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=12 addr_off=0xf64 count=1
+[notify miss]  seq=12 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=13 addr_off=0xf64 count=1
+[notify miss]  seq=13 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=14 addr_off=0xf64 count=1
+[notify miss]  seq=14 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=15 addr_off=0xf64 count=1
+[notify miss]  seq=15 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=16 addr_off=0xf64 count=1
+[notify miss]  seq=16 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=17 addr_off=0xf64 count=1
+[notify miss]  seq=17 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=18 addr_off=0xf64 count=1
+[notify miss]  seq=18 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=19 addr_off=0xf64 count=1
+[notify miss]  seq=19 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=20 addr_off=0xf64 count=1
+[notify miss]  seq=20 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=21 addr_off=0xf64 count=1
+[notify miss]  seq=21 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=22 addr_off=0xf64 count=1
+[notify miss]  seq=22 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=23 addr_off=0xf64 count=1
+[notify miss]  seq=23 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=24 addr_off=0xf64 count=1
+[notify miss]  seq=24 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=25 addr_off=0xf64 count=1
+[notify miss]  seq=25 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=26 addr_off=0xf64 count=1
+[notify miss]  seq=26 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=27 addr_off=0xf64 count=1
+[notify miss]  seq=27 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=28 addr_off=0xf64 count=1
+[notify miss]  seq=28 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=29 addr_off=0xf64 count=1
+[notify miss]  seq=29 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=30 addr_off=0xf64 count=1
+[notify miss]  seq=30 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=31 addr_off=0xf64 count=1
+[notify miss]  seq=31 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=32 addr_off=0xf64 count=1
+[notify miss]  seq=32 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=33 addr_off=0xf64 count=1
+[notify miss]  seq=33 addr_off=0xf64 reason=no_wait_info
+[notify enter] seq=34 addr_off=0xf64 count=1
+[notify miss]  seq=34 addr_off=0xf64 reason=no_wait_info

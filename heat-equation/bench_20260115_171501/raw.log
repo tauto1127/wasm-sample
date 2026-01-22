@@ -1,0 +1,7 @@
+# command: /home/takuto1127/wamr-2.1.0-with-wasi-threads-vanilla/product-mini/platforms/linux/build/iwasm --max-threads=32 wasm.wasm 1000 1000 50 4 mutex
+=== run 1/30 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=5.279836
+=== run 2/30 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=4 stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
