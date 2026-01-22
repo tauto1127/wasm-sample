@@ -1,0 +1,190 @@
+restore flag set 
+Looking up symbol: clock_time_get
+Looking up symbol: fd_close
+Looking up symbol: fd_fdstat_get
+Looking up symbol: fd_seek
+Looking up symbol: fd_write
+Looking up symbol: poll_oneoff
+Looking up symbol: proc_exit
+Looking up symbol: sched_yield
+Looking up symbol: thread-spawn
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 0
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+signal init: 126716622739008
+メインスレッド
+=======Start restoring 4 wasm VM
+waiting_thread_ids: count: 2
+waiting_thread_ids[0]: -1
+waiting_thread_ids[1]: 1
+wasm_cluster_init_checkpointing_counter : 0
+thread_ids : 3
+Restoring wasm thread 3 from 3-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+3-Start constructing Wasm VM
+-==============================restore
+thread 3 restore
+3-Start constructing Wasm VM
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+Done Restoring wasm thread 3 from 3-*
+thread_ids : 2
+Restoring wasm thread 2 from 2-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+2-Start constructing Wasm VM
+メインスレッドじゃない: 126716620043840 and SIG_RESTORE
+3 Started interpretor
+-==============================restore
+3 start restore stack
+restore stack
+thread 2 restore
+2-Start constructing Wasm VM
+3 restore stack done
+無視
+3 done restore
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+counter up: 1
+[waiting_run enter] tid=3 host=126716620043840
+Done Restoring wasm thread 2 from 2-*
+thread_ids : 1
+Restoring wasm thread 1 from 1-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+1-Start constructing Wasm VM
+メインスレッドじゃない: 126708028012096 and SIG_RESTORE
+2 Started interpretor
+2 start restore stack
+restore stack
+-==============================restore
+thread 1 restore
+1-Start constructing Wasm VM
+2 restore stack done
+無視
+2 done restore
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+Done Restoring wasm thread 1 from 1-*
+done wasm_restore_thread
+counter up: 2
+[waiting_run enter] tid=2 host=126708028012096
+get_file_prefix
+メインスレッドじゃない: 126708026959424 and SIG_RESTORE
+1 Started interpretor
+1 start restore stack
+restore stack
+restore stack
+1 restore stack done
+無視
+1 done restore
+counter up: 3
+[waiting_run enter] tid=1 host=126708026959424
+1
+無視
+2
+3
+counter up: 4
+========all threads restore done
+waking up thread 1: 126716622571072
+waking up thread 2: 126716622571072
+waking up thread 3: 126716622571072
+waking up thread main!!
+[waiting_run end] tid=1 host=126708026959424
+main thread wake up!
+線形メモリ：memory_data: 0x733d83000000, memory_end: 0x733d83050000
+main thread run
+1: thread run
+done waiting threads run!
+線形メモリ：memory_data: 0x733d83000000, memory_end: 0x733d83050000
+done waiting threads run2!
+restore_sync_routine: finished wake up all threads
+[waiting_run end] tid=2 host=126708028012096
+2: thread run
+[waiting_run end] tid=3 host=126716620043840
+3: thread run
+線形メモリ：memory_data: 0x733d83000000, memory_end: 0x733d83050000
+線形メモリ：memory_data: 0x733d83000000, memory_end: 0x733d83050000
+5] (在庫: 5/5)
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [4]
+[Consumer 1] 🛠️  タスク処理開始: [5] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [5] (在庫: 5/5)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [5]
+[Consumer 1] 🛠️  タスク処理開始: [5] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [6] (在庫: 5/5)
+[Consumer 1] ✅ タスク完了: [5]
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] 🛠️  タスク処理開始: [6] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [6] (在庫: 5/5)
+[Consumer 1] ✅ タスク完了: [6]
+[Consumer 1] 🛠️  タスク処理開始: [6] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [7] (在庫: 5/5)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [6]
+[Consumer 1] 🛠️  タスク処理開始: [7] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [7] (在庫: 5/5)
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [7]
+[Consumer 1] 🛠️  タスク処理開始: [7] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [8] (在庫: 5/5)
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [7]
+[Consumer 1] 🛠️  タスク処理開始: [8] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [8] (在庫: 5/5)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [8]
+[Consumer 1] 🛠️  タスク処理開始: [8] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [9] (在庫: 5/5)
+[Consumer 1] ✅ タスク完了: [8]
+[Consumer 1] 🛠️  タスク処理開始: [9] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [9] (在庫: 5/5)
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [9]
+[Consumer 1] 🛠️  タスク処理開始: [9] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [10] (在庫: 5/5)
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [9]
+[Consumer 1] 🛠️  タスク処理開始: [10] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [10] (在庫: 5/5)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [10]
+[Consumer 1] 🛠️  タスク処理開始: [10] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [11] (在庫: 5/5)
+[Producer 2] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [10]
+[Consumer 1] 🛠️  タスク処理開始: [11] (在庫: 4/5)
+[Producer 1] 🟢 タスク投入: [11] (在庫: 5/5)
+[Producer 1] ⚠️  キュー満杯！待機します... (Cond Wait)
+[Consumer 1] ✅ タスク完了: [11]
+[Consumer 1] 🛠️  タスク処理開始: [11] (在庫: 4/5)
+[Producer 2] 🟢 タスク投入: [

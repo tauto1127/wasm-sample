@@ -1,0 +1,67 @@
+boot_end, 27142759668077
+boot_end, 27142760682904
+stack, 110129
+global, 8486
+program counter, 6203
+boot_end, 27142761597600
+stack, 124526
+global, 8115
+program counter, 10389
+boot_end, 27142762787669
+stack, 144034
+global, 7715
+program counter, 6111
+boot_end, 27142763805801
+stack, 126861
+global, 6523
+program counter, 27161
+boot_end, 27142764753971
+stack, 158761
+global, 5731
+program counter, 9317
+boot_end, 27142765643539
+stack, 130156
+global, 9398
+program counter, 10289
+boot_end, 27142766763616
+stack, 173720
+global, 7414
+program counter, 10581
+boot_end, 27142767915332
+stack, 152850
+global, 8366
+program counter, 11181
+boot_end, 27142768889290
+stack, 119566
+global, 11462
+program counter, 7074
+boot_end, 27142769929975
+stack, 342200
+stack, 114177
+global, 7283
+program counter, 6562
+memory, 687234
+global, 6652
+program counter, 5370
+waking up thread 1: 136455880812096
+waking up thread 2: 136455880812096
+waking up thread 3: 136455880812096
+waking up thread 4: 136455880812096
+waking up thread 5: 136455880812096
+3: thread run
+waking up thread 6: 136455880812096
+waking up thread 7: 136455880812096
+4: thread run
+waking up thread 8: 136455880812096
+6: thread run
+waking up thread 9: 136455880812096
+5: thread run
+7: thread run
+waking up thread 10: 136455880812096
+waking up thread main!!
+main thread run
+1: thread run
+2: thread run
+9: thread run
+8: thread run
+10: thread run

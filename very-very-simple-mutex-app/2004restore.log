@@ -1,0 +1,140 @@
+restore flag set 
+Looking up symbol: clock_time_get
+Looking up symbol: fd_close
+Looking up symbol: fd_fdstat_get
+Looking up symbol: fd_seek
+Looking up symbol: fd_write
+Looking up symbol: proc_exit
+Looking up symbol: sched_yield
+Looking up symbol: thread-spawn
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+実行されたL445
+memory_count: 0 import_memory_count: 1
+execute_post_instantiate_functions: 0
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+signal init: 131354741888576
+メインスレッド
+=======Start restoring 2 wasm VM
+waiting_thread_ids: count: 1
+waiting_thread_ids[0]: -1
+wasm_cluster_init_checkpointing_counter : 0
+thread_ids : 1
+Restoring wasm thread 1 from 1-*
+start init module inst
+WASM_ENABLE_MULTI_MODULE: 0
+memories_instantiate，L433memory_idx: 0 is shared memory: 1
+独立メモリとしてインスタンス化しません
+実行されたL445
+memory_count: 0 import_memory_count: 1
+done init module inst
+done init custom
+done init contexts
+1-Start constructing Wasm VM
+-==============================restore
+thread 1 restore
+1-Start constructing Wasm VM
+
+ WASM_ENABLE_DEBUG_INTERP: 0
+Done Restoring wasm thread 1 from 1-*
+done wasm_restore_thread
+get_file_prefix
+restore stack
+メインスレッドじゃない: 131354741753408 and SIG_RESTORE
+1 Started interpretor
+1 start restore stack
+restore stack
+1 restore stack done
+無視
+1 done restore
+counter up: 1
+[waiting_run enter] tid=1 host=131354741753408
+1
+無視
+2
+3
+counter up: 2
+========all threads restore done
+waking up thread 1: 131354741618240
+waking up thread main!!
+done waiting threads run!
+done waiting threads run2!
+restore_sync_routine: finished wake up all threads
+main thread wake up!
+線形メモリ：memory_data: 0x777568600000, memory_end: 0x777568630000
+main thread run
+[waiting_run end] tid=1 host=131354741753408
+1: thread run
+線形メモリ：memory_data: 0x777568600000, memory_end: 0x777568630000
+
+// stderr
+boot_end, 352021198543282
+boot_end, 352021199171750
+stack, 258068
+stack, 93977
+global, 8085
+program counter, 5720
+memory, 223743
+global, 10740
+program counter, 10190
+waking up thread 1: 131354741618240
+waking up thread main!!
+main thread run
+1: thread run
+[mtx_unlock after swap] m=0x1514 lock=0x0 own=0 self=0x21bc4 tid=1 cont=-2147483638
+
+// gdb
+❯ sudo gdb -batch -ex "thread apply all bt" -p 554978
+[New LWP 554979]
+[New LWP 554980]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+__GI___pthread_sigmask (how=0, newmask=<optimized out>, oldmask=0x0) at ./nptl/pthread_sigmask.c:43
+43      ./nptl/pthread_sigmask.c: No such file or directory.
+
+Thread 3 (Thread 0x72fe39254640 (LWP 554980) "iwasm"):
+#0  0x0000605ab78da94f in wasm_interp_call_func_bytecode ()
+#1  0x0000605ab78f21c1 in wasm_interp_call_wasm ()
+#2  0x0000605ab78ba267 in call_wasm_with_hw_bound_check ()
+#3  0x0000605ab78bab43 in wasm_call_function ()
+#4  0x0000605ab78b6501 in wasm_runtime_call_wasm ()
+#5  0x0000605ab78fc70d in thread_start ()
+#6  0x0000605ab78c67a1 in thread_manager_start_routine ()
+#7  0x0000605ab78b3e6f in os_thread_wrapper ()
+#8  0x000072fe39094ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#9  0x000072fe391268c0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 2 (Thread 0x72fe39275640 (LWP 554979) "iwasm"):
+#0  0x000072fe3904321a in __GI___sigtimedwait (set=set@entry=0x72fe39274d30, info=info@entry=0x72fe39274c70, timeout=timeout@entry=0x0) at ../sysdeps/unix/sysv/linux/sigtimedwait.c:61
+#1  0x000072fe390428ac in __GI___sigwait (set=0x72fe39274d30, sig=0x72fe39274d2c) at ../sysdeps/unix/sysv/linux/sigwait.c:28
+#2  0x0000605ab78c8bdb in signal_control_routine ()
+#3  0x0000605ab78b3e6f in os_thread_wrapper ()
+#4  0x000072fe39094ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#5  0x000072fe391268c0 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+
+Thread 1 (Thread 0x72fe39276780 (LWP 554978) "iwasm"):
+#0  __GI___pthread_sigmask (how=0, newmask=<optimized out>, oldmask=0x0) at ./nptl/pthread_sigmask.c:43
+#1  0x0000605ab78b33d5 in signal_callback ()
+#2  <signal handler called>
+#3  0x0000000000000000 in ?? ()
+#4  0x0000605adc517268 in ?? ()
+#5  0x0000605adc510d50 in ?? ()
+#6  0x0000605adc515cf0 in ?? ()
+#7  0x0000605adc50b2cd in ?? ()
+#8  0x0000605adc5170fc in ?? ()
+#9  0x0000605adc5156a0 in ?? ()
+#10 0x0000605adc515ea0 in ?? ()
+#11 0x0000605adc5145e0 in ?? ()
+#12 0x0000003000000018 in ?? ()
+#13 0xcf007fff94342920 in ?? ()
+#14 0x0000000100020002 in ?? ()
+#15 0x0000605adc514738 in ?? ()
+#16 0x0000605adc5148c0 in ?? ()
+#17 0x0000605adc5147b0 in ?? ()
+#18 0x0000605adc517220 in ?? ()
+#19 0x0000605adc517270 in ?? ()
+#20 0x0000605adc50b306 in ?? ()
+#21 0x00007fff94342a5f in ?? ()
+#22 0x0000000000000000 in ?? ()
+[Inferior 1 (process 554978) detached]
