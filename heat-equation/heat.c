@@ -12,18 +12,9 @@
 //   gcc -O2 -std=c11 -pthread heat_bench_pthreads.c -o heat_bench
 // Run:
 //   ./heat_bench nx ny steps nthreads [stress] [checkpoint_every] [stress_every] [print_every] [stress_iters]
-// Example (deterministic baseline):
-//   ./heat_bench 1000 1000 200 8 none 0 1 0 0
-// Example (mutex-blocked threads every step, call hook every step):
-//   ./heat_bench 1000 1000 200 8 mutex 1 1 0 2000000
-// Example (condvar-blocked threads every 10 steps):
-//   ./heat_bench 1000 1000 200 8 cond 10 10 0 2000000
-// Example (join-blocked thread every 5 steps; requires nthreads>=2):
-//   ./heat_bench 1000 1000 200 8 join 5 5 0 2000000
-// Example (threads blocked at an extra barrier while tid0 calls hook):
-//   ./heat_bench 1000 1000 200 8 barrier 1 1 0 2000000
 //
 // Notes:
+// - nthreads==0 runs in pure single-thread mode (no pthread_create).
 // - The "stress" phase does NOT change the grid values; it is purely for
 //   creating synchronization states for your checkpoint mechanism.
 // - The program prints a checksum at the end to support regression tests.
@@ -147,7 +138,7 @@ typedef struct {
     int nx;
     int ny;
     int steps;
-    int nthreads;
+    int nthreads; // effective runtime threads (>=1)
 
     double cx;
     double cy;
@@ -530,13 +521,14 @@ static void *worker_fn(void *p) {
 static void usage(const char *argv0) {
     fprintf(stderr,
             "Usage: %s nx ny steps nthreads [stress] [checkpoint_every] [stress_every] [print_every] [stress_iters]\n"
+            "  nthreads: 0 => single-thread (no pthread_create), >=1 => pthread workers\n"
             "  stress: none|barrier|mutex|cond|join (default: none)\n"
             "  checkpoint_every: call checkpoint_hook every N steps (0 disables, default 0)\n"
             "  stress_every: apply stress every N steps (default 1)\n"
             "  print_every: print sample cells every N steps (0 disables, default 0)\n"
             "  stress_iters: busy-spin iterations while threads are blocked (default 0)\n"
             "Examples:\n"
-            "  %s 1000 1000 200 8\n"
+            "  %s 1000 1000 200 0\n"
             "  %s 1000 1000 200 8 mutex 1 1 0 2000000\n",
             argv0, argv0, argv0);
 }
@@ -557,7 +549,11 @@ int main(int argc, char **argv) {
 
     if (cfg.nx < 3 || cfg.ny < 3) die("nx and ny must be >= 3");
     if (cfg.steps < 1) die("steps must be >= 1");
-    if (cfg.nthreads < 1) die("nthreads must be >= 1");
+    if (cfg.nthreads < 0) die("nthreads must be >= 0");
+
+    int user_nthreads = cfg.nthreads;
+    int run_threads = (cfg.nthreads == 0) ? 1 : cfg.nthreads;
+    cfg.nthreads = run_threads; // make effective for the rest of the program
 
     cfg.cx = 0.125;
     cfg.cy = 0.11;
@@ -587,8 +583,8 @@ int main(int argc, char **argv) {
     if (cfg.hot_y1 > cfg.ny - 1) cfg.hot_y1 = cfg.ny - 1;
 
     fprintf(stdout,
-            "heat_bench: nx=%d ny=%d steps=%d nthreads=%d stress=%s checkpoint_every=%d stress_every=%d print_every=%d stress_iters=%lld\n",
-            cfg.nx, cfg.ny, cfg.steps, cfg.nthreads, stress_name(cfg.stress),
+            "heat_bench: nx=%d ny=%d steps=%d nthreads=%d (effective=%d) stress=%s checkpoint_every=%d stress_every=%d print_every=%d stress_iters=%lld\n",
+            cfg.nx, cfg.ny, cfg.steps, user_nthreads, cfg.nthreads, stress_name(cfg.stress),
             cfg.checkpoint_every, cfg.stress_every, cfg.print_every, cfg.stress_iters);
 
     size_t ncell = (size_t)cfg.nx * (size_t)cfg.ny;
@@ -611,10 +607,6 @@ int main(int argc, char **argv) {
     barrier_t bar;
     barrier_init(&bar, cfg.nthreads);
 
-    pthread_t *ths = (pthread_t *)calloc((size_t)cfg.nthreads, sizeof(pthread_t));
-    worker_arg_t *args = (worker_arg_t *)calloc((size_t)cfg.nthreads, sizeof(worker_arg_t));
-    if (!ths || !args) die("calloc failed");
-
     // Partition interior rows [1, nx-1) among threads.
     const int interior = cfg.nx - 2;
     const int base = interior / cfg.nthreads;
@@ -622,27 +614,49 @@ int main(int argc, char **argv) {
 
     uint64_t t0 = now_ns();
 
-    for (int tid = 0; tid < cfg.nthreads; tid++) {
-        int extra = (tid < rem) ? 1 : 0;
-        int off = tid * base + (tid < rem ? tid : rem);
-        int x0 = 1 + off;
-        int x1 = x0 + base + extra;
+    if (user_nthreads == 0) {
+        // Pure single-thread mode: no pthread_create.
+        worker_arg_t arg;
+        memset(&arg, 0, sizeof(arg));
+        arg.tid = 0;
+        arg.cfg = &cfg;
+        arg.bar = &bar;
+        arg.A = &gA;
+        arg.B = &gB;
+        arg.x0 = 1;
+        arg.x1 = cfg.nx - 1; // interior end
 
-        args[tid].tid = tid;
-        args[tid].cfg = &cfg;
-        args[tid].bar = &bar;
-        args[tid].A = &gA;
-        args[tid].B = &gB;
-        args[tid].x0 = x0;
-        args[tid].x1 = x1;
+        (void)worker_fn(&arg);
+    } else {
+        pthread_t *ths = (pthread_t *)calloc((size_t)cfg.nthreads, sizeof(pthread_t));
+        worker_arg_t *args = (worker_arg_t *)calloc((size_t)cfg.nthreads, sizeof(worker_arg_t));
+        if (!ths || !args) die("calloc failed");
 
-        int rc = pthread_create(&ths[tid], NULL, worker_fn, &args[tid]);
-        if (rc != 0) die_errno("pthread_create", rc);
-    }
+        for (int tid = 0; tid < cfg.nthreads; tid++) {
+            int extra = (tid < rem) ? 1 : 0;
+            int off = tid * base + (tid < rem ? tid : rem);
+            int x0 = 1 + off;
+            int x1 = x0 + base + extra;
 
-    for (int tid = 0; tid < cfg.nthreads; tid++) {
-        int rc = pthread_join(ths[tid], NULL);
-        if (rc != 0) die_errno("pthread_join", rc);
+            args[tid].tid = tid;
+            args[tid].cfg = &cfg;
+            args[tid].bar = &bar;
+            args[tid].A = &gA;
+            args[tid].B = &gB;
+            args[tid].x0 = x0;
+            args[tid].x1 = x1;
+
+            int rc = pthread_create(&ths[tid], NULL, worker_fn, &args[tid]);
+            if (rc != 0) die_errno("pthread_create", rc);
+        }
+
+        for (int tid = 0; tid < cfg.nthreads; tid++) {
+            int rc = pthread_join(ths[tid], NULL);
+            if (rc != 0) die_errno("pthread_join", rc);
+        }
+
+        free(ths);
+        free(args);
     }
 
     uint64_t t1 = now_ns();
@@ -658,8 +672,6 @@ int main(int argc, char **argv) {
 
     barrier_destroy(&bar);
 
-    free(ths);
-    free(args);
     free(A);
     free(B);
 

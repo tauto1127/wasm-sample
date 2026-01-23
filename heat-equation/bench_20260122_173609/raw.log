@@ -1,0 +1,51 @@
+# command: /home/takuto1127/wamr-2.1.0-with-wasi-threads/product-mini/platforms/linux/build/iwasm --max-threads=32 wasm.wasm 1000 1000 50 10 mutex
+=== run 1/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.176385
+signal init: 129045307459136
+=== run 2/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.199153
+signal init: 126707596420672
+=== run 3/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.202500
+signal init: 139886132205120
+=== run 4/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.272667
+signal init: 132784760366656
+=== run 5/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.250968
+signal init: 124266778052160
+=== run 6/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.203539
+signal init: 124044651398720
+=== run 7/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.208314
+signal init: 138758390515264
+=== run 8/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.209422
+signal init: 129178185446976
+=== run 9/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.377575
+signal init: 126025855415872
+=== run 10/10 ===
+heat_bench: nx=1000 ny=1000 steps=50 nthreads=10 (effective=10) stress=mutex checkpoint_every=0 stress_every=1 print_every=0 stress_iters=0
+checksum=566549922.009987235069
+time_sec=3.221844
+signal init: 136917989205568
